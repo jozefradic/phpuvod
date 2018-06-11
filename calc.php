@@ -4,11 +4,11 @@ $num2 = $_POST['num2'];
 $func = $_POST['function'];
 $check = $_POST['checkbox'];
 $radio = $_POST['radio'];
-if (!$radio ="young")
+if (!$num1="" || !$num2="" )
 {
-    die("Too young");
+    die("Input is empty");
 }
-else if (!$num1="" || !$num2="" || !$num1!=0 || !$num2!=0 || !$check=='false'|| !$radio=='old')
+else if (!$num1!=0 || !$num2!=0 || !$check=='false')
 {
 die("Number is null");
 exit();
